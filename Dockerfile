@@ -7,9 +7,8 @@ COPY . /usr/src/app
 # Install node.js and app dependencies
 RUN echo '@edge http://nl.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories \
   && apk update && apk upgrade \
-  && apk add --no-cache nodejs
-dock
+  && apk add --no-cache nodejs && npm install
 # Expose port
 EXPOSE 8080
 
-CMD [ "node", "index.js" ]
+CMD [ "node", "app.js" ]
