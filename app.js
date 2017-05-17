@@ -4,6 +4,7 @@ var images = require('images');
 var app = express();
 
 var makeQr = function (req, res, logo) {
+    res.header("Access-Control-Allow-Origin", "*");
     var url = req.query.url ? req.query.url : 'http://www.kaoyaya.com';
     var size = parseInt(req.query.size);
     var qrBuffer = qr.imageSync(url, {type: 'png', size: 25});

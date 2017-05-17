@@ -21,7 +21,7 @@ npm run start
   - 请求示例: `get $host/?url=http://www.kaoyaya.com&size=200`
   - 响应:  
   ![qrimge](./qr.png)
-### 获取普通二维码
+### 获取带logo二维码
   - 请求 `get $host/logo?url=&size=`
   - 参数
     1. url(string):需要转换成二维码的URL地址
