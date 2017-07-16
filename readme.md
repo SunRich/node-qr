@@ -12,6 +12,18 @@ npm run start
 
 ## docker部署
 
+### 配置docker信息
+config-default.sh
+```bash
+#!/bin/bash
+imageName=node-qr
+containerName=node-qr
+```
+### 构建镜像
+```bash
+./build.sh
+```
+
 ## 服务功能
 ### 获取普通二维码
   - 请求 `get $host/?url=&size=`

@@ -3,6 +3,7 @@ var qr = require('qr-image');
 var images = require('images');
 var app = express();
 
+//生成二维码
 var makeQr = function (req, res, logo) {
     res.header("Access-Control-Allow-Origin", "*");
     var url = req.query.url ? req.query.url : 'http://www.kaoyaya.com';
@@ -17,7 +18,7 @@ var makeQr = function (req, res, logo) {
     }
     res.type('image/png').send(qrBuffer);
 }
-//add logo
+//在二维码上添加logo
 var addLogo = function (qrBuffer, logo) {
     qrImg = images(qrBuffer);
     var logo = images(logo);
