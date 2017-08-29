@@ -32,7 +32,7 @@ containerName=node-qr
     2. size(int):二维码大小
   - 请求示例: `get $host/?url=http://www.kaoyaya.com&size=200`
   - 响应:  
-  ![qrimge](./qr.png)
+  ![qrimge](./img/qr.png)
 ### 获取带logo二维码
   - 请求 `get $host/logo?url=&size=`
   - 参数
@@ -40,4 +40,4 @@ containerName=node-qr
     2. size(int):二维码大小
   - 请求示例: `get $host/logo?url=http://www.kaoyaya.com&size=200`
   - 响应:  
-  ![qrimge](./qrlogo.png)
+  ![qrimge](./img/qrlogo.png)
