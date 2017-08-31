@@ -52,7 +52,8 @@ app.get('/logo', function (req, res) {
 
 app.get('/build',function (req, res) {
     var url=req.query.url;
-    res.render('build', { url: url});
+    var encodeUri=encodeURIComponent(url);
+    res.render('build', { url: url,encodeUri:encodeUri});
 });
 
 app.listen(8080, function () {

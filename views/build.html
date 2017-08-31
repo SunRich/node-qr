@@ -23,7 +23,7 @@
     </div>
     <div class="text-center">
         {{#if url}}
-        <img src="/logo?url={{ url }}" alt="" style="width: 400px;height: 400px;" class="img-rounded">
+        <img src="/logo?url={{ encodeUri }}" alt="" style="width: 400px;height: 400px;" class="img-rounded">
         {{/if}}
     </div>
 </form>
